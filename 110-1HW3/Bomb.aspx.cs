@@ -40,7 +40,7 @@ namespace _110_1HW3
             }
             Response.Write("</table>");
         }
-        public void SetBomb(int[,] ia_Map, int[] ia_MIndex) // 放置炸彈
+        public void SetBomb(int[,] ia_Map, int[] ia_MIndex) 
         {
             for (int i = 0; i < ia_MIndex.Length; i++)
             {
@@ -49,7 +49,7 @@ namespace _110_1HW3
                 ia_Map[row, col] = -1;
             }
         }
-        public void Search(int[,] ia_Map)  //找尋炸彈 附近範圍
+        public void Search(int[,] ia_Map)  
         {
             if (ia_Map[0, 0] == -1)
             {
